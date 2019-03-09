@@ -6,7 +6,7 @@ namespace OdeToFood.Core
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required, StringLength(80)]
         public string Name { get; set; }
 
         [Required, StringLength(255)]
